@@ -103,7 +103,11 @@ section{
         align-items: center;
         margin: .7rem 0;
         box-shadow: var(--box-shadow-1);
-
+        i{
+            font-size: 1.2rem;
+            pointer-events:none;
+            
+        }
     }
 
 }
