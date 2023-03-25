@@ -90,18 +90,19 @@ section{
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
+    background-color: #27AE60;
     .active-btn{
         background-color: var(--color-secondary) !important;
         transition: all .4s ease-in-out;
         i{
             color: var(--color-white) !important; 
         } 
-    }   
+    }
     .control{
         padding: 1rem;
         z-index: 11;
         cursor: pointer;
-        background-color: var(--color-grey-4);
+        background-color: var(--color-secondary);
         width: 55px;
         height: 55px;
         border-radius: 50%;
