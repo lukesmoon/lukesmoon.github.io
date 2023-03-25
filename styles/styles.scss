@@ -91,12 +91,11 @@ section{
     justify-content: center;
     transform: translateY(-50%);
     .active-btn{
-        color: white;
-        /*background-color: var(--color-secondary) !important;
+        background-color: var(--color-secondary) !important;
         transition: all .4s ease-in-out;
         i{
             color: var(--color-white) !important; 
-        }*/ 
+        } 
     }   
     .control{
         padding: 1rem;
