@@ -89,7 +89,14 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+    transform: translateY(-50%);
+    .active-btn{
+        background-color: var(--color-secondary) !important;
+        transition: all .4s ease-in-out;
+        i{
+            color: var(--color-white) !important;
+        }
+    }   
     .control{
         padding: 1rem;
         z-index: 11;
@@ -105,8 +112,7 @@ section{
         box-shadow: var(--box-shadow-1);
         i{
             font-size: 1.2rem;
-            pointer-events:none;
-
+            pointer-events: none;
         }
     }
 
