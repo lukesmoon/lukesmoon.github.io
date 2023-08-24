@@ -1,19 +1,25 @@
-const sections = document.querySelectorAll( '.section');
-const sectBtns = document.querySelectorAll('controls');
-const sectBtn = document.querySelectorAll('.control');
-const allSections = document.querySelector('.main-content');
+(function () {
 
-function PageTransition(){
-    //on click
-    for(let i =0; i < sectBtn.length; i++){
-        sectBtn[i].addEventListener('click', () => {
-            let currentBtn = document.querySelectorAll('.active-btn');
-            currentBtn[0].classList = currentBtn[0].className.replace('active-btn','');
-            this.className += 'active-btn'
+    [...document.querySelectorAll(".control")].forEach(button => {
+
+        button.addEventListener("click", function() {
+
+            document.querySelector(".active-btn").classList.remove("active-btn");
+
+            this.classList.add("active-btn");
+
+            document.querySelector(".active").classList.remove("active");
+
+            document.getElementById(button.dataset.id).classList.add("active");
 
         })
-    
-    }
-}
 
-PageTransition()
+    });
+
+    document.querySelector(".theme-btn").addEventListener("click", () => {
+
+        document.body.classList.toggle("light-mode");
+
+    })
+
+})();
