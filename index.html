@@ -13,21 +13,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     </head>
     <body class="main-content">
-    <header class="section sec1 header active" id="home">
+        <script src="app.js"></script>  
+        <header class="section sec1 header active" id="home">
         <div class="header-content">
             <div class="left-header">
                 <div class="h-shape"></div> 
                 <div class="image">
-                    <img src=""img>
+                    <img src="cover2.jpg">
                 </div>
             </div>
             <div class="right-header">
                 <h1 class="name">
                     Hi, I'm <span>Luke Moon.</span>
-                    Mechanical Engineering.
+                    Mechanical Engineering 2025.
                 </h1>
                 <p>
-                    Lorem ipsum
+                    Something something engineering is cool
                 </p>
                 <div class="btn-con">
                     <a href="" class="main-btn">
@@ -40,9 +41,83 @@
         </div>
     </header>
     <main>
-        <section class="section sec2 about" id="about"></section>
+        <section class="section sec2 about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text"></span></h2>
+            </div>
+            <div class="about-container">
+                <div class="left-about">
+                    <h4>Information About me</h4>
+                    <p>
+                        Dunno
+                    </p>
+                    <div class="btn-con">
+                        <a href="#" class="main-btn">
+                            <span class="btn-text">Download CV/Resume</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">0.15</p>
+                            <p class="small-text">Grade <br /> Point Average </p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">1291</p>
+                            <p class="small-text">Hours of <br /> League of Legends </p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">133 </p>
+                            <p class="small-text">Words <br /> Per Minute </p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <div class="large-text">
+
+                            <p id="large-text-timer"></p>
+                            </div>
+                            <script>
+                                    var countDownDate = new Date("May 20, 2024").getTime();
+
+                                    // Update the count down every 1 second
+                                    var x = setInterval(function() {
+
+                                        // Get today's date and time
+                                        var now = new Date().getTime();
+                                            
+                                        // Find the distance between now and the count down date
+                                        var distance = countDownDate - now;
+                                            
+                                        // Time calculations for days, hours, minutes and seconds
+                                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                                            
+                                        // Output the result in an element with id="demo"
+                                        document.getElementById("large-text-timer").innerHTML = days + "d ";
+                                            
+                                        // If the count down is over, write some text 
+                                        if (distance < 0) {
+                                            clearInterval(x);
+                                            document.getElementById("large-text-timer").innerHTML = "EXPIRED";
+                                        }
+                                                                        
+                                }, 1000);
+                            </script>
+                            <p class="small-text">Until <br /> Graduation </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="section sec3 portfolio" id="portfolio"></section>
-        <section class="section sec4 misc" id="resume"></section>
+        <section class="section sec4 misc" id="resume">
+        </section>
         <section class="section sec5 contacts" id="contact"></section>
     </main>
 
