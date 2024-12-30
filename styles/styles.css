@@ -364,6 +364,9 @@ section {
   color: var(--color-grey-1) span;
   color-color: var(--color-white);
 }
+.timeline .class-list {
+  padding: 1rem;
+}
 
 .btn-con {
   display: flex;
